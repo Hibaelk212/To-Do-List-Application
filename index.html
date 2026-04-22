@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP4 - Todo List</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <div id="app">
+        <h1>TP4 - Ma Todo List </h1>
+        <div id="authSection" class="auth-container">
+            <h3>Authentification</h3>
+            <input type="text" id="regNom" placeholder="Nom complet">
+            <input type="email" id="regEmail" placeholder="Email">
+            <input type="password" id="regPassword" placeholder="Mot de passe">
+            <button id="btnInscription">S'inscrire</button>
+            <button id="btnConnexion">Se connecter</button>
+            <p id="authMessage" class="auth-message"></p>
+        </div>
+        <div id="todoSection" class="hidden">
+            <div class="welcome-header">
+                <span class="welcome-message" id="welcomeMessage"></span>
+                <div>
+                    <button id="btnDarkMode">🌙 Mode sombre</button>
+                    <button id="btnDeconnexion">Déconnexion</button>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Rechercher une tâche...">
+                <button id="btnFilterAll">Toutes</button>
+                <button id="btnFilterDone">Terminées</button>
+                <button id="btnFilterPending">Non terminées</button>
+            </div>
+            <div class="formulaire">
+                <h3>Ajouter une tâche</h3>
+                <input type="text" id="nomTache" placeholder="Titre de la tâche">
+                <textarea id="descTache" placeholder="Description" rows="2"></textarea>
+                <input type="text" id="priorite" placeholder="Priorité (Haute/Moyenne/Basse/Urgent)">
+                <button class="btn-ajouter" id="btnAjouter">Ajouter</button>
+            </div>
+            <div class="info-container">
+                <div class="info-card">
+                    <span id="totalTaches">0</span>
+                    <p>Total des tâches</p>
+                </div>
+                <div class="info-card">
+                    <span id="tachesTerminees">0</span>
+                    <p>Tâches terminées</p>
+                </div>
+                <div class="info-card">
+                    <span id="tachesRestantes">0</span>
+                    <p>Tâches restantes</p>
+                </div>
+            </div>
+            <div id="listeTaches"></div>
+            <div class="formulaire">
+                <h3>Historique des actions</h3>
+                <div id="historyList"></div>
+            </div>
+            
+            <button class="btn-effacer" id="btnEffacer">Effacer tout</button>
+        </div>
+    </div>
+    
+    <script src="page.js"></script>
+</body>
+</html>

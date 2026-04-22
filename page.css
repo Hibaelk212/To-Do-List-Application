@@ -1,0 +1,420 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f0f7;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #1e1e2f;
+}
+
+body.dark-mode h1 {
+    color: #c9a9e6;
+}
+
+body.dark-mode .task {
+    background-color: #2a2a3d;
+    border-color: #3d3d5c;
+    color: #e0e0e0;
+}
+
+body.dark-mode .task-done {
+    background-color: #2a3d2a;
+    border-left-color: #8bc34a;
+}
+
+body.dark-mode .task-pending {
+    background-color: #3d2a2a;
+    border-left-color: #ff8a8a;
+}
+
+body.dark-mode .task:hover {
+    background-color: #35354b;
+}
+
+body.dark-mode .formulaire {
+    background-color: #2a2a3d;
+}
+
+body.dark-mode .formulaire h3 {
+    color: #c9a9e6;
+}
+
+body.dark-mode .info-card {
+    background-color: #2a2a3d;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .info-card span {
+    color: #c9a9e6;
+}
+
+body.dark-mode .info-card p {
+    color: #bbbbbb;
+}
+
+body.dark-mode input, 
+body.dark-mode textarea, 
+body.dark-mode select {
+    background-color: #1e1e2f;
+    color: #e0e0e0;
+    border-color: #4a4a6a;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #888;
+}
+
+body.dark-mode input:focus, 
+body.dark-mode textarea:focus {
+    border-color: #c9a9e6;
+}
+
+body.dark-mode .welcome-header {
+    background-color: #2a2a3d;
+}
+
+body.dark-mode .welcome-message {
+    color: #c9a9e6;
+}
+
+body.dark-mode .auth-container {
+    background-color: #2a2a3d;
+    color: #e0e0e0;
+}
+
+body.dark-mode .auth-container h3 {
+    color: #c9a9e6;
+}
+
+body.dark-mode .history-item {
+    border-bottom-color: #4a4a6a;
+    color: #e0e0e0;
+    background-color: #22223b;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+body.dark-mode .history-item strong {
+    color: #c9a9e6;
+}
+
+body.dark-mode .history-item small {
+    color: #aaa;
+}
+
+body.dark-mode #historyList p {
+    color: #bbbbbb;
+}
+
+body.dark-mode #listeTaches > p {
+    color: #e0e0e0;
+    text-align: center;
+}
+
+body.dark-mode .urgent-message {
+    background-color: #4a2a2a;
+    color: #ffaaaa;
+}
+
+body.dark-mode .btn-ajouter {
+    background-color: #9b7bc9;
+}
+
+body.dark-mode .btn-ajouter-actif {
+    background-color: #7b5ba9;
+}
+
+body.dark-mode .btn-effacer {
+    background-color: #5a5a7a;
+    color: #eee;
+}
+
+body.dark-mode .btn-statut {
+    background-color: #5a9e5a;
+}
+
+body.dark-mode .btn-modifier {
+    background-color: #e09e3e;
+}
+
+body.dark-mode .btn-supprimer {
+    background-color: #c95a5a;
+}
+
+body.dark-mode .search-bar input {
+    background-color: #1e1e2f;
+    color: #e0e0e0;
+    border-color: #4a4a6a;
+}
+
+body.dark-mode .search-bar input::placeholder {
+    color: #888;
+}
+
+body.dark-mode .search-bar button {
+    background-color: #3a3a55;
+    color: #e0e0e0;
+}
+
+body.dark-mode .search-bar button:hover {
+    background-color: #4a4a6a;
+}
+
+body.dark-mode .task p.description-text {
+    color: #e0e0e0;
+}
+
+body.dark-mode .task p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .task p.date-text {
+    color: #aaa !important;
+}
+
+body.dark-mode #btnDarkMode {
+    background-color: #4a4a6a;
+    color: #e0e0e0;
+}
+
+body.dark-mode #btnDeconnexion {
+    background-color: #c95a5a;
+}
+
+h1 {
+    color: #7c5e8c;
+    text-align: center;
+}
+
+.task {
+    border: 1px solid #d9c4e6;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #fcf5ff;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.task-done {
+    background-color: #e8f3e8;
+    border-left: 5px solid #8bc34a;
+}
+
+.task-pending {
+    background-color: #ffe6e6;
+    border-left: 5px solid #ff4d4d;
+}
+
+.task:hover {
+    background-color: #f0e4fc;
+    transform: translateX(5px);
+}
+
+.urgent {
+    border: 3px solid #ff4d4d;
+    background-color: #ffe6e6;
+}
+
+.urgent-message {
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #ffebee;
+    border-radius: 5px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+.btn-ajouter {
+    background-color: #b39ddb;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn-ajouter-actif {
+    background-color: #6b4e7c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+.btn-effacer {
+    background-color: #cfcfcf;
+    color: #333;
+    padding: 10px 20px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.btn-statut {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-modifier {
+    background-color: #ff9800;
+    color: white;
+}
+
+.btn-supprimer {
+    background-color: #f44336;
+    color: white;
+}
+
+.formulaire {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+input, textarea, select {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d9c4e6;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    transition: all 0.3s;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #b39ddb;
+    box-shadow: 0 0 5px rgba(179,157,219,0.3);
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.info-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.info-card span {
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+    color: #7c5e8c;
+}
+
+.info-card p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.auth-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s;
+}
+
+.auth-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.welcome-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.welcome-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #7c5e8c;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-bar input {
+    flex: 1;
+    margin: 0;
+}
+
+.search-bar button {
+    margin: 0;
+}
+
+.history-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+    transition: all 0.3s;
+    margin: 3px 0;
+    border-radius: 8px;
+}
+
+.history-item strong {
+    color: #7c5e8c;
+}
+
+.task p {
+    margin: 8px 0;
+}
+
+.task p.date-text {
+    font-size: 12px;
+    color: #999;
+}
+
+#listeTaches > p {
+    text-align: center;
+    color: #666;
+}
